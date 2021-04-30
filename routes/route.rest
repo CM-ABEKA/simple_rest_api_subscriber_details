@@ -1,0 +1,29 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/608b030d1dc37305ecb41b73
+
+
+###
+
+POST http://localhost:3000/subscribers/608b030d1dc37305ecb41b73
+Content-Type: application/json
+
+{
+    "name": "Johnny Bravo",
+    "subscribedToChannel": "Documentasia"
+}
+
+###
+
+DELETE http://localhost:3000/subscribers/608b030d1dc37305ecb41b73
+
+###
+
+PATCH http://localhost:3000/subscribers/608b030d1dc37305ecb41b73
+Content-Type: application/json
+
+{
+    "name": "Karl Max"
+}
